@@ -1,0 +1,36 @@
+{
+    "trimmed_files": [
+        {
+            "location": "file:///Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_paired_R1.fastq",
+            "basename": "example1_paired_R1.fastq",
+            "class": "File",
+            "checksum": "sha1$f951d7170520ce07c1ed3ec17579677839a9f1b8",
+            "size": 476362,
+            "path": "/Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_paired_R1.fastq"
+        },
+        {
+            "location": "file:///Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_paired_R2.fastq",
+            "basename": "example1_paired_R2.fastq",
+            "class": "File",
+            "checksum": "sha1$56d872563582eadb32a73a96199ad10c7b45a9b4",
+            "size": 2913,
+            "path": "/Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_paired_R2.fastq"
+        },
+        {
+            "location": "file:///Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_unpaired_R1.fastq",
+            "basename": "example1_unpaired_R1.fastq",
+            "class": "File",
+            "checksum": "sha1$aa89ee8f0378e7a72a5132a75c0d02d37da3ce8d",
+            "size": 452338,
+            "path": "/Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_unpaired_R1.fastq"
+        },
+        {
+            "location": "file:///Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_unpaired_R2.fastq",
+            "basename": "example1_unpaired_R2.fastq",
+            "class": "File",
+            "checksum": "sha1$b81118492a1c63c87c2f98ee8ebd7756753aba59",
+            "size": 1416,
+            "path": "/Users/kristenbrown/Documents/GitHub/pipeline-examples/output/CWL/example1_unpaired_R2.fastq"
+        }
+    ]
+}
