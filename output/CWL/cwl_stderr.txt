@@ -1,0 +1,31 @@
+/Users/kristenbrown/miniconda3/envs/py36/bin/cwltool 1.0.20180906142934
+Resolved '../../cwl_example.cwl' to 'file:///Users/kristenbrown/Documents/GitHub/pipeline-examples/cwl_example.cwl'
+[job cwl_example.cwl] /private/tmp/docker_tmphk7m_n8e$ java \
+    -jar \
+    /private/var/folders/vm/4dx8yb6d1p7ffhc87_wptvz80000gn/T/tmpgt67el2u/stg5b53b7de-3e2c-49ae-89de-786b4293e9a6/trimmomatic-0.36.jar \
+    PE \
+    /private/var/folders/vm/4dx8yb6d1p7ffhc87_wptvz80000gn/T/tmpgt67el2u/stg3db78bc3-fff6-422a-b1f5-c7943652eb9d/example1_R1_001.fastq.gz \
+    /private/var/folders/vm/4dx8yb6d1p7ffhc87_wptvz80000gn/T/tmpgt67el2u/stg67f2bba3-ed06-4269-bccc-6c6f55f2d085/example1_R2_001.fastq.gz \
+    example1_paired_R1.fastq \
+    example1_paired_R2.fastq \
+    example1_unpaired_R1.fastq \
+    example1_unpaired_R2.fastq \
+    ILLUMINACLIP:/private/var/folders/vm/4dx8yb6d1p7ffhc87_wptvz80000gn/T/tmpgt67el2u/stgc4857321-99ca-47ee-b843-f7eabea613b3/NexteraPE-PE.fa:2:30:10:3:TRUE \
+    LEADING:3 \
+    TRAILING:3 \
+    SLIDINGWINDOW:4:15 \
+    MINLEN:36
+TrimmomaticPE: Started with arguments:
+ /private/var/folders/vm/4dx8yb6d1p7ffhc87_wptvz80000gn/T/tmpgt67el2u/stg3db78bc3-fff6-422a-b1f5-c7943652eb9d/example1_R1_001.fastq.gz /private/var/folders/vm/4dx8yb6d1p7ffhc87_wptvz80000gn/T/tmpgt67el2u/stg67f2bba3-ed06-4269-bccc-6c6f55f2d085/example1_R2_001.fastq.gz example1_paired_R1.fastq example1_paired_R2.fastq example1_unpaired_R1.fastq example1_unpaired_R2.fastq ILLUMINACLIP:/private/var/folders/vm/4dx8yb6d1p7ffhc87_wptvz80000gn/T/tmpgt67el2u/stgc4857321-99ca-47ee-b843-f7eabea613b3/NexteraPE-PE.fa:2:30:10:3:TRUE LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Multiple cores found: Using 4 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 1000 Both Surviving: 989 (98.90%) Forward Only Surviving: 8 (0.80%) Reverse Only Surviving: 3 (0.30%) Dropped: 0 (0.00%)
+TrimmomaticPE: Completed successfully
+[job cwl_example.cwl] completed success
+Final process status is success
