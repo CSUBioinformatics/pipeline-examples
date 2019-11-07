@@ -1,13 +1,16 @@
-TRIMMOMATIC = "/usr/local/Trimmomatic-0.36/trimmomatic-0.36.jar"
-ADAPTERS = "/usr/local/Trimmomatic-0.36/adapters/NexteraPE-PE.fa"
+#!/usr/bin/env nextflow
+
+TRIMMOMATIC = "${HOME}/tools/Trimmomatic-0.39/trimmomatic-0.39.jar"
+ADAPTERS = "${HOME}/tools/Trimmomatic-0.39/adapters/NexteraPE-PE.fa"
 
 
 Channel
     .fromFilePairs( params.reads, flat: true )
-    .into { read_pairs }
+    .ifEmpty { error "Cannot find any reads matching: ${params.reads}" }
+    .set { read_pairs }
 
 
-process Trimmomatic {
+process QualityControl {
     tag {dataset_id}
     
     publishDir "${params.output}/Nextflow"

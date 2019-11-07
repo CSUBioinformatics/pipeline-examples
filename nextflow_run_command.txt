@@ -1,0 +1,1 @@
+nextflow nextflow_example.nf --reads "data/*_R{1,2}*" --output output/ -w work/ -resume

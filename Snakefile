@@ -1,5 +1,5 @@
-TRIMMOMATIC = "/usr/local/Trimmomatic-0.36/trimmomatic-0.36.jar"
-ADAPTERS = "/usr/local/Trimmomatic-0.36/adapters/NexteraPE-PE.fa"
+TRIMMOMATIC = "${HOME}/tools/Trimmomatic-0.39/trimmomatic-0.39.jar"
+ADAPTERS = "${HOME}/tools/Trimmomatic-0.39/adapters/NexteraPE-PE.fa"
 
 SAMPLES=['example1', 'example2']
 
@@ -10,7 +10,7 @@ rule all:
         expand('output/Snakemake/{sample}_unpaired_R1.fastq', sample=SAMPLES),
         expand('output/Snakemake/{sample}_unpaired_R2.fastq', sample=SAMPLES)
 
-rule bwa_index:
+rule QualityControl:
     input:
         forward='data/{sample}_R1_001.fastq.gz',
         reverse='data/{sample}_R2_001.fastq.gz'
